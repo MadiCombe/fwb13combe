@@ -4,13 +4,10 @@ app.set("view engine", "pug");
 extends layout
 
 block content
-  h1= title
-  p is this thing on?? plz work???
-  button(type="button", class="btn btn-secondary" onclick="update()") Press Me
-  div(id="target") Display
-  script. 
-    var client_count = 0;
-    method update(){
-      x = client_count+=1
-      cosole.log("target" = "Value Now: " + x)
-    }
+  h1= Add Mods
+  let query = req.query 
+  console.log(`rows ${query.rows}`) 
+  console.log(`cols ${query.cols}`)
+  {title: ‘Addmods’, query: query}
+  p #{query.cols} #{query.rows}
+  
