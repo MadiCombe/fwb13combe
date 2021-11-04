@@ -4,13 +4,8 @@ app.set("view engine", "pug");
 extends layout
 
 block content
-  h1= title
-  p is this thing on?? plz work???
-  button(type="button", class="btn btn-secondary" onclick="update()") Press Me
-  div(id="target") Display
-  script. 
-    var client_count = 0;
-    method update(){
-      x = client_count+=1
-      cosole.log("target" = "Value Now: " + x)
-    }
+  h1= Selector 
+  var puppy_images ['pupp1.jpg', 'pupp2.jpg', 'pupp3.jpg', 'pupp4.jpg', 'pupp5.jpg']
+  for (var i = 0, i < puppy_images.length, i++){
+    Math.floor(Math.random()*5)
+  }
